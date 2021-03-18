@@ -30,7 +30,7 @@ requirements:
     - numpy
     - python >=3.6
     - scipy
-    - simpleitk
+    - simpleitk <2
     - pytorch
     - tqdm
     - setuptools
