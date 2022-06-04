@@ -11,7 +11,7 @@ source:
   sha256: 0747691072a4fd5de80a060eca8bddaaccb94b3386e81a46492458416be4d9d8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - torchio-transform=torchio.cli.apply_transform:main
@@ -30,7 +30,7 @@ requirements:
     - numpy
     - python >=3.6
     - scipy
-    - simpleitk <2
+    - simpleitk !=2.0.*
     - pytorch >=1.7
     - tqdm
     - setuptools
