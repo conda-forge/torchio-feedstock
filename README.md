@@ -1,11 +1,11 @@
-About torchio
-=============
+About torchio-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/torchio-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/fepegar/torchio
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/torchio-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for loading, augmenting and writing 3D medical images on PyTorch.
 
