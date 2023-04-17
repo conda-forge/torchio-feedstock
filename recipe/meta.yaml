@@ -1,5 +1,5 @@
 {% set name = "torchio" %}
-{% set version = "0.18.90" %}
+{% set version = "0.18.91" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9eddd0a0954feba6259865406ea7962ad3d38b8edbc6173ac570627189662955
+  sha256: a9e3a391c69407c4592f0bf62b3e6a10d6a846e4f34c981e919881992add7a20
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - torchio-transform=torchio.cli.apply_transform:main
