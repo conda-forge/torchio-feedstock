@@ -1,5 +1,5 @@
 {% set name = "torchio" %}
-{% set version = "0.19.1" %}
+{% set version = "0.19.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d3db9799b8a7eb826844ab78093d71c395e6c0d7a8c7af95d4ff088fcca844d6
+  sha256: 077b6e6ead83fdaf2e27bc65f0236575e190c6a453838b43899e6ba695604236
 
 build:
   number: 0
@@ -21,14 +21,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.6, <3.12
   run:
     - click
     - deprecated >=1.2.5
     - humanize
     - nibabel
     - numpy
-    - python >=3.6
+    - python >=3.6, <3.12
     - scipy
     - simpleitk !=2.0.*
     - pytorch >=1.7
