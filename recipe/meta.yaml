@@ -21,14 +21,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6, <3.12
+    - python >=3.6, <3.13
   run:
     - click
     - deprecated >=1.2.5
     - humanize
     - nibabel
     - numpy
-    - python >=3.6, <3.12
+    - python >=3.6, <3.13
     - scipy
     - simpleitk !=2.0.*
     - pytorch >=1.7
