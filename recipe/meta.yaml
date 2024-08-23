@@ -40,6 +40,8 @@ test:
     - torchio
   commands:
     - pip check
+    - torchio-transform --help
+    - tiohd --help
   requires:
     - pip
 
