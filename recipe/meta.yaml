@@ -20,6 +20,7 @@ build:
 requirements:
   host:
     - pip
+    - setuptools
     - python >=3.8, <3.13
   run:
     - python >=3.8, <3.13
@@ -33,7 +34,6 @@ requirements:
     - pytorch >=1.7
     - tqdm
     - typer
-    - setuptools
 
 test:
   imports:
