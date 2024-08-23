@@ -1,7 +1,6 @@
 {% set name = "torchio" %}
 {% set version = "0.19.9" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,7 +10,7 @@ source:
   sha256: 69cdeff01fa06ffaed8c7ffa40a8160c0257bc6930bc41cab8132cf1115816a9
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - torchio-transform=torchio.cli.apply_transform:main
@@ -21,23 +20,28 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6, <3.13
+    - python >=3.8, <3.13
   run:
-    - click
+    - python >=3.8, <3.13
     - deprecated >=1.2.5
     - humanize
     - nibabel
-    - numpy
+    - numpy >=1.15
     - python >=3.6, <3.13
     - scipy
-    - simpleitk !=2.0.*
+    - simpleitk !=2.0.*,!=2.1.1.1
     - pytorch >=1.7
     - tqdm
+    - typer
     - setuptools
 
 test:
   imports:
     - torchio
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/fepegar/torchio
@@ -49,3 +53,4 @@ about:
 extra:
   recipe-maintainers:
     - sarthakpati # https://github.com/fepegar/torchio/discussions/480#discussioncomment-455823
+    - anjos
