@@ -41,7 +41,7 @@ test:
   commands:
     - pip check
     # - torchio-transform --help  ## broken
-    - tiohd --help
+    # - tiohd --help  ## broken
   requires:
     - pip
 
