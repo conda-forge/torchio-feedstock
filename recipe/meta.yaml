@@ -22,9 +22,11 @@ requirements:
     - pip
     - setuptools
     - python >=3.8, <3.13
+    - hatchling
   run:
     - python >=3.8, <3.13
     - deprecated >=1.2.5
+    - hatchling
     - humanize
     - nibabel
     - numpy >=1.15
