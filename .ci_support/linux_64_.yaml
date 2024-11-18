@@ -1,5 +1,5 @@
 cdt_name:
-- cos7
+- conda
 channel_sources:
 - conda-forge
 channel_targets:
@@ -7,4 +7,4 @@ channel_targets:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 orc:
-- 2.0.2
+- 2.0.3
