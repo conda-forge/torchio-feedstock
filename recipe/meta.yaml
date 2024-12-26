@@ -10,7 +10,7 @@ source:
   sha256: c9f334b98354036e624df6ed2e2d56053fb70681eff515cbe33aba7a636ad61f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - torchio-transform=torchio.cli.apply_transform:main
@@ -19,17 +19,17 @@ build:
 
 requirements:
   host:
-    - python >=3.8, <3.13
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.8, <3.13
+    - python >={{ python_min }},<3.13
     - deprecated >=1.2.5
     - hatchling
     - humanize
     - nibabel
     - numpy >=1.15
-    - python >=3.6, <3.13
+    - python >={{ python_min }},<3.13
     - scipy
     - simpleitk !=2.0.*,!=2.1.1.1
     - pytorch >=1.7
@@ -45,6 +45,7 @@ test:
     # - tiohd --help  ## broken
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/fepegar/torchio
