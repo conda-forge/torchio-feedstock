@@ -35,6 +35,7 @@ requirements:
     - pytorch >=1.7
     - tqdm
     - typer
+    - einops >=0.3
 
 test:
   imports:
