@@ -10,7 +10,7 @@ source:
   sha256: b1631ae382e7e50a3f57080727a009aa2b43a902b543315234279d6a9f499a7b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - torchio-transform=torchio.cli.apply_transform:main
