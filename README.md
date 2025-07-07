@@ -3,13 +3,23 @@ About torchio-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/torchio-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/fepegar/torchio
+Home: https://torchio.readthedocs.io/
 
 Package license: Apache-2.0
 
-Summary: Tools for loading, augmenting and writing 3D medical images on PyTorch.
+Summary: Tools for medical image processing with PyTorch
 
-Documentation: https://torchio.readthedocs.io/index.html
+Development: https://github.com/TorchIO-project/torchio
+
+Documentation: https://torchio.readthedocs.io/
+
+TorchIO is a Python package containing a set of tools to efficiently read,
+preprocess, sample, augment, and write 3D medical images in deep learning
+applications written in PyTorch, including intensity and spatial transforms
+for data augmentation and preprocessing. Transforms include typical computer
+vision operations such as random affine transformations and also
+domain-specific ones such as simulation of intensity artifacts due to MRI
+magnetic field inhomogeneity or k-space motion artifacts.
 
 Current build status
 ====================
@@ -146,5 +156,6 @@ Feedstock Maintainers
 =====================
 
 * [@anjos](https://github.com/anjos/)
+* [@aywi](https://github.com/aywi/)
 * [@sarthakpati](https://github.com/sarthakpati/)
 
