@@ -68,7 +68,6 @@ about:
     domain-specific ones such as simulation of intensity artifacts due to MRI
     magnetic field inhomogeneity or k-space motion artifacts.
   license: Apache-2.0
-  license_file: LICENSE
   homepage: https://torchio.readthedocs.io/
   repository: https://github.com/TorchIO-project/torchio
   documentation: https://torchio.readthedocs.io/
