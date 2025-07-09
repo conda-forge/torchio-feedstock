@@ -24,12 +24,10 @@ build:
       - torchio-transform = torchio.cli.apply_transform:app
 
 requirements:
-  build:
-    - uv >=0.7.19,<0.8.0
   host:
-    - hatchling
     - pip
     - python ${{ python_min }}.*
+    - uv-build
   run:
     - deprecated >=1.2
     - einops >=0.3
