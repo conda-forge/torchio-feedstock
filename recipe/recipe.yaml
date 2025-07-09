@@ -3,18 +3,18 @@ schema_version: 1
 
 context:
   name: torchio
-  version: "0.20.17"
+  version: "0.20.18"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 559a87a56753ed08ac19546ded31a75a59f7af58689672592c13878ddef37d40
+  - url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+    sha256: 54901ba8beffc12986348e1676697e15ecf3f0fe6502b51d91afef38f98f0ae4
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install . -vv
   python:
@@ -25,9 +25,9 @@ build:
 
 requirements:
   host:
-    - hatchling
     - pip
     - python ${{ python_min }}.*
+    - uv-build
   run:
     - deprecated >=1.2
     - einops >=0.3
