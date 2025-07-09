@@ -10,8 +10,8 @@ package:
   version: ${{ version }}
 
 source:
-  - url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-    sha256: 54901ba8beffc12986348e1676697e15ecf3f0fe6502b51d91afef38f98f0ae4
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: 54901ba8beffc12986348e1676697e15ecf3f0fe6502b51d91afef38f98f0ae4
 
 build:
   number: 0
