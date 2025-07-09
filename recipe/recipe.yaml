@@ -24,6 +24,8 @@ build:
       - torchio-transform = torchio.cli.apply_transform:app
 
 requirements:
+  build:
+    - uv-build >=0.7.19,<0.8.0
   host:
     - hatchling
     - pip
