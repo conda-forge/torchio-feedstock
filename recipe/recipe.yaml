@@ -10,8 +10,10 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 54901ba8beffc12986348e1676697e15ecf3f0fe6502b51d91afef38f98f0ae4
+  - url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+    sha256: 54901ba8beffc12986348e1676697e15ecf3f0fe6502b51d91afef38f98f0ae4
+  - url: https://raw.githubusercontent.com/TorchIO-project/torchio/refs/tags/v${{ version }}/LICENSE
+    sha256: e41c88c4f5d03adb410e70e0fd7a170f0834266c411774007525244c076fe8d9
 
 build:
   number: 0
@@ -68,6 +70,7 @@ about:
     domain-specific ones such as simulation of intensity artifacts due to MRI
     magnetic field inhomogeneity or k-space motion artifacts.
   license: Apache-2.0
+  license_file: LICENSE
   homepage: https://torchio.readthedocs.io/
   repository: https://github.com/TorchIO-project/torchio
   documentation: https://torchio.readthedocs.io/
