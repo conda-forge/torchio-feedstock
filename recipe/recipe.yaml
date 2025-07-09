@@ -1,3 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
+schema_version: 1
+
 context:
   name: torchio
   version: "0.20.17"
@@ -55,8 +58,7 @@ tests:
         - python ${{ python_min }}.*
 
 about:
-  homepage: https://torchio.readthedocs.io/
-  summary: 'Tools for medical image processing with PyTorch'
+  summary: Tools for medical image processing with PyTorch
   description: |
     TorchIO is a Python package containing a set of tools to efficiently read,
     preprocess, sample, augment, and write 3D medical images in deep learning
@@ -67,8 +69,9 @@ about:
     magnetic field inhomogeneity or k-space motion artifacts.
   license: Apache-2.0
   license_file: LICENSE
-  documentation: https://torchio.readthedocs.io/
+  homepage: https://torchio.readthedocs.io/
   repository: https://github.com/TorchIO-project/torchio
+  documentation: https://torchio.readthedocs.io/
 
 extra:
   recipe-maintainers:
