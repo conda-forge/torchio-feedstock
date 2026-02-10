@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: torchio
-  version: "0.21.2"
+  version: "0.21.3"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 5769b5a447ad693c33a7249a7616be1f34ea13c247fb1668860ac42d59c9a58d
+  sha256: fb19d70c34e6378b5e44ef613832ac818bf145cdb65e82ad00fa8bc97219839b
 
 build:
   number: 0
