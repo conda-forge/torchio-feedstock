@@ -32,6 +32,7 @@ requirements:
     - deprecated >=1.2
     - einops >=0.3
     - humanize >=0.1
+    - jaxtyping >=0.2
     - nibabel >=3
     - numpy >=1.20
     - packaging >=20
@@ -69,9 +70,9 @@ about:
     magnetic field inhomogeneity or k-space motion artifacts.
   license: Apache-2.0
   license_file: LICENSE
-  homepage: https://torchio.readthedocs.io/
+  homepage: https://torchio.org/
   repository: https://github.com/TorchIO-project/torchio
-  documentation: https://torchio.readthedocs.io/
+  documentation: https://docs.torchio.org/
 
 extra:
   recipe-maintainers:
