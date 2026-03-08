@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: torchio
-  version: "0.21.4"
+  version: "0.22.1"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: dc444e925c2f7c6b120ece4bf8cba5066c2303db0fff69f6ff8a7f90ba02ba45
+  sha256: e4a23c167681ac64079c9aec05e44b024ecf299bd393e6a65cf1e88b77deab8d
 
 build:
   number: 0
@@ -32,6 +32,7 @@ requirements:
     - deprecated >=1.2
     - einops >=0.3
     - humanize >=0.1
+    - jaxtyping >=0.2
     - nibabel >=3
     - numpy >=1.20
     - packaging >=20
@@ -69,9 +70,9 @@ about:
     magnetic field inhomogeneity or k-space motion artifacts.
   license: Apache-2.0
   license_file: LICENSE
-  homepage: https://torchio.readthedocs.io/
+  homepage: https://torchio.org/
   repository: https://github.com/TorchIO-project/torchio
-  documentation: https://torchio.readthedocs.io/
+  documentation: https://docs.torchio.org/
 
 extra:
   recipe-maintainers:
