@@ -3,7 +3,7 @@ About torchio-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/torchio-feedstock/blob/main/LICENSE.txt)
 
-Home: https://torchio.readthedocs.io/
+Home: https://torchio.org/
 
 Package license: Apache-2.0
 
@@ -11,7 +11,7 @@ Summary: Tools for medical image processing with PyTorch
 
 Development: https://github.com/TorchIO-project/torchio
 
-Documentation: https://torchio.readthedocs.io/
+Documentation: https://docs.torchio.org/
 
 TorchIO is a Python package containing a set of tools to efficiently read,
 preprocess, sample, augment, and write 3D medical images in deep learning
@@ -25,11 +25,10 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12198&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/torchio-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
